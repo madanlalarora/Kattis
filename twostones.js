@@ -1,8 +1,3 @@
-# Kattis
-Solutions to open.kattis.com in JavaScript
-
-
-# Readline template
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -11,5 +6,5 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', (line) => {
-    /* Code here */
+    console.log(line % 2 === 0 ? 'Bob' : 'Alice');
 });
